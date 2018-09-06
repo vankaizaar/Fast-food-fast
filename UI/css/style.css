@@ -47,6 +47,7 @@ div#app {
 .container {
     margin: 0 auto;
     max-width: 64rem;
+    height: 100%;
 }
 
 header {
@@ -92,7 +93,8 @@ nav a.link {
     font-size: 1rem;
 }
 
-nav a.link:hover {
+nav a.link:hover,
+nav a.link.active {
     color: var(--main-bg-red);
 }
 
@@ -107,7 +109,8 @@ nav a.cta {
     border-radius: .5em;
 }
 
-nav a.cta:hover {
+nav a.cta:hover,
+nav a.cta.active {
     background: var(--main-bg-gold);
 }
 
@@ -115,6 +118,11 @@ nav a.cta:hover {
     height: auto;
     min-height: calc(100vh - 165px);
     color: var(--main-bg-color);
+}
+
+.content-alternate {
+    height: auto;
+    min-height: calc(100vh - 165px);
 }
 
 a.cta-alternate {
@@ -128,6 +136,46 @@ a.cta-alternate {
 
 a.cta-alternate:hover {
     background: var(--main-bg-red);
+}
+
+.content-holder {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    min-height: calc(100vh - 159px);
+}
+
+.content-holder>div {
+    width: 50%;
+    height: auto;
+}
+
+.content-holder div.image-holder {
+    background: #000;
+}
+
+.content-holder div.image-holder img {
+    object-fit: cover;
+    object-position: 80% 80%;
+    height: 100%;
+}
+
+.content-holder div.details {
+    background: #fefefe;
+}
+
+@media screen and (max-width: 60em) {
+    .content-holder {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        min-height: calc(100vh - 159px);
+    }
+    .content-holder>div {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
 }
 
 footer {
@@ -146,4 +194,9 @@ footer p {
     background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.bg-alternate {
+    background: var(--main-bg-color);
+    border-top: .4rem solid var(--main-bg-red);
 }
