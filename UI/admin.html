@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fast-Food-Fast | Order History</title>
+    <title>Fast-Food-Fast | Admin</title>
     <link rel="stylesheet" href="css/utilities.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
@@ -22,12 +22,12 @@
                 </div>
                 <div>
                     <a href="menu.html" class="link margin-horizontal">Menu</a>
-                    <a href="#" class="link margin-horizontal active">Order History</a>
-                    <a href="admin.html" class="link margin-horizontal">Admin Area</a>
+                    <a href="history.html" class="link margin-horizontal active">Order History</a>
+                    <a href="#" class="link margin-horizontal">Admin Area</a>
                 </div>
                 <div class="text-right">
                     <img src="images/john-doe.jpg" class="profile-image" alt="John Doe">
-                    <span><b>John Doe</b></span>
+                    <span><b>Administrator</b></span>
                 </div>
 
             </nav>
@@ -40,22 +40,38 @@
                     </div>
                     <div class="details padding-all-2">
                         <div class="width-100">
-                            <h1 class="font-two font-bold">John Doe's Order History</h1>
+                            <h1 class="font-two font-bold">Admin Panel</h1>
+                            <h2>ORDERS</h2>
                             <table>
                                 <tbody>
                                     <tr class="striped">
                                         <th class="font-bold">Order No:</th>
                                         <th class="font-bold">Item</th>
                                         <th class="font-bold">Price</th>
-                                        <th class="font-bold">Status</th>
-                                        <th class="font-bold">Date</th>
+                                        <th class="font-bold">Location</th>
+                                        <th class="font-bold">Task</th>
                                     </tr>
                                     <tr class="striped">
                                         <td>#2353421</td>
                                         <td>Lite Combo</td>
                                         <td>300</td>
-                                        <td>Delivered</td>
-                                        <td>21/08/2017</td>
+                                        <td>South B</td>
+                                        <td>
+                                            <a href="#" class="admin-task">Accept</a>
+                                            <a href="#" class="admin-task">Decline</a>
+                                            <a href="#" class="admin-task">Complete</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="striped">
+                                        <td>#2323421</td>
+                                        <td>Fam Combo</td>
+                                        <td>700</td>
+                                        <td>South C</td>
+                                        <td>
+                                            <a href="#" class="admin-task">Accept</a>
+                                            <a href="#" class="admin-task">Decline</a>
+                                            <a href="#" class="admin-task">Complete</a>
+                                        </td>
                                     </tr>
 
                                 </tbody>
