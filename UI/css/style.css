@@ -114,6 +114,13 @@ nav a.cta.active {
     background: var(--main-bg-gold);
 }
 
+nav .profile-image {
+    border-radius: 50%;
+    width: 2rem;
+    vertical-align: middle;
+    border: 2px solid var(--main-bg-color);
+}
+
 .content {
     height: auto;
     min-height: calc(100vh - 165px);
@@ -175,6 +182,39 @@ a.cta-alternate:hover {
         width: 100%;
         height: auto;
         display: block;
+    }
+}
+
+.menu-holder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.combo {
+    width: 44%;
+    height: auto;
+    background: var(--main-bg-color);
+    margin-bottom: 2rem;
+    border: 1px solid #000;
+}
+
+.combo h4,
+.combo h5 {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 60em) {
+    .menu-holder {
+        display: flex;
+        flex-direction: column;
+    }
+    .combo {
+        width: 100%;
+        height: auto;
+        margin-bottom: 2rem;
     }
 }
 

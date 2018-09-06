@@ -23,7 +23,7 @@ html {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -97,6 +97,10 @@ img {
 
 .flex-row {
     flex-direction: row;
+}
+
+.display-i-b {
+    display: inline-block;
 }
 
 
