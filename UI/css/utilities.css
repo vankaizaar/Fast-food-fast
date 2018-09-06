@@ -1,0 +1,182 @@
+/* CSS Reset */
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: auto;
+    height: 100%;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+
+/* Color Vars */
+
+:root {
+    --main-bg-color: #f8f8f8;
+    --main-bg-gold: #ffc000;
+    --main-bg-red: #f91100;
+    --main-bg-gray: #d0c3b2;
+    --main-text-black: #555555;
+}
+
+
+/* Margin */
+
+.margin-auto {
+    margin: auto;
+}
+
+.margin-horizontal {
+    margin: 0 .5rem;
+}
+
+.margin-vertical {
+    margin: 1rem 0;
+}
+
+
+/* Padding */
+
+.padding-all-small {
+    padding: 0.5rem;
+}
+
+.padding-all-1 {
+    padding: 1rem;
+}
+
+.padding-all-2 {
+    padding: 2rem;
+}
+
+.padding-all-4 {
+    padding: 4rem;
+}
+
+.padding-all-8 {
+    padding: 8rem;
+}
+
+.padding-all-16 {
+    padding: 16rem;
+}
+
+
+/* Flex classes */
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+
+/* Width */
+
+.width-10 {
+    width: 10%;
+}
+
+.width-20 {
+    width: 20%;
+}
+
+.width-30 {
+    width: 30%;
+}
+
+.width-33 {
+    width: 33%;
+}
+
+.width-40 {
+    width: 40%;
+}
+
+.width-50 {
+    width: 50%;
+}
+
+.width-60 {
+    width: 60%;
+}
+
+.width-70 {
+    width: 70%;
+}
+
+.width-80 {
+    width: 80%;
+}
+
+.width-90 {
+    width: 90%;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+
+/* Text alignment */
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-italics {
+    font-style: italic;
+}
+
+.text-shadow {
+    text-shadow: 1px 1px 5px rgba(150, 150, 150, 0.6);
+}
+
+
+/* Text sizes */
+
+.font-small {
+    font-size: 0.875rem;
+}
+
+.font-one {
+    font-size: 1rem;
+}
+
+.font-two {
+    font-size: 1.25rem;
+}
+
+.font-three {
+    font-size: 1.5rem;
+}
+
+.font-four {
+    font-size: 2.25rem;
+}
+
+.font-five {
+    font-size: 3rem;
+}

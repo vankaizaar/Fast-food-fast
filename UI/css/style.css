@@ -1,0 +1,149 @@
+body {
+    font-family: "Roboto", helvetica, arial, sans-serif;
+    font-style: normal;
+    padding: 20px;
+    background: linear-gradient(135deg, var(--main-bg-red) 0%, var(--main-bg-gold) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    margin: 0;
+    color: var(--main-text-black);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 900;
+    line-height: 1.25;
+}
+
+p {
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all .2s linear;
+}
+
+div#app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background: var(--main-bg-color);
+    margin: 0 auto;
+    box-shadow: 0 0 50px 1px rgba(0, 0, 0, 0.90);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 64rem;
+}
+
+header {
+    position: relative;
+    background: var(--main-bg-gray);
+    height: auto;
+}
+
+header nav {
+    display: table;
+}
+
+header nav div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 60em) {
+    header nav {
+        display: block;
+        width: 100%;
+    }
+    header nav div {
+        width: 100%;
+        margin: 1rem auto;
+        display: block;
+        text-align: center !important;
+    }
+}
+
+nav a.logo {
+    font-family: 'Playfair Display', serif;
+    background: var(--main-bg-color);
+}
+
+nav a.logo:hover {
+    color: var(--main-bg-red);
+}
+
+nav a.link {
+    color: var(--main-bg-color);
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+
+nav a.link:hover {
+    color: var(--main-bg-red);
+}
+
+nav a.cta {
+    font-family: "Roboto", helvetica, arial, sans-serif;
+    background: var(--main-bg-red);
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    color: var(--main-bg-color);
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    border-radius: .5em;
+}
+
+nav a.cta:hover {
+    background: var(--main-bg-gold);
+}
+
+.content {
+    height: auto;
+    min-height: calc(100vh - 165px);
+    color: var(--main-bg-color);
+}
+
+a.cta-alternate {
+    font-family: "Roboto", helvetica, arial, sans-serif;
+    background: var(--main-bg-gold);
+    padding: 0.5rem 1rem;
+    letter-spacing: .1em;
+    border-radius: .5em;
+    text-transform: uppercase;
+}
+
+a.cta-alternate:hover {
+    background: var(--main-bg-red);
+}
+
+footer {
+    background: var(--main-bg-gray);
+    height: auto;
+}
+
+footer p {
+    font-size: small;
+}
+
+.bg-home {
+    background-image: linear-gradient(rgba(35, 35, 35, 0.8), rgba(35, 35, 35, 0.8)), url('../images/bg-home.jpg');
+    background-size: cover;
+    background-position: top center;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
